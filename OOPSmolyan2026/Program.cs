@@ -16,9 +16,9 @@ class Program
         Person person5 = new Person("Angelina", 18);
         Person person6 = new Person("Petya", 18);
 
-        IIntroducable student1 = new Student("Kiril", 20, "FN12345");
+        Student student1 = new Student("Kiril", 20, "FN12345");
 
-        IIntroducable athlete1 = new Athlete("Maria", 25, "Tennis");
+        Athlete athlete1 = new Athlete("Maria", 25, "Tennis");
 
         //Console.WriteLine($"Person 1: {person1.GetName()}, Age: {person1.GetAge()}");
         //Console.WriteLine($"Person 2: {person2.GetName()}, Age: {person2.GetAge()}");
@@ -34,6 +34,9 @@ class Program
 
         student1.Introduce();
         athlete1.Introduce();
+
+        Executor exec1 = new Executor(student1);
+        exec1.MakeItSpeak();
     }
 
     void Test()

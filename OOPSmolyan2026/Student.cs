@@ -24,7 +24,7 @@ namespace OOPSmolyan2026
             this.facultyNumber = facultyNumber;
         }
 
-        public void Introduce()
+        public override void Introduce()
         {
             // base.Introduce();
             Console.WriteLine($"Hello, I am a student. My name is {name}, I am {age} years old and my faculty number is {facultyNumber}.");

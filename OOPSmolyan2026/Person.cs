@@ -62,7 +62,7 @@ namespace OOPSmolyan2026
         {
         }
 
-        public void Introduce()
+        public virtual void Introduce()
         {
             Console.WriteLine($"Hi, I'm {name} and I'm {age} years old.");
         }

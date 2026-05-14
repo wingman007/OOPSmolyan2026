@@ -25,7 +25,7 @@ namespace OOPSmolyan2026
             this.sport = sport;
         }
 
-        public void Introduce()
+        public override void Introduce()
         {
             Console.WriteLine($"Hello, I am an athlete. My name is {name}, I am {age} years old and my sport is {sport}.");
         }
